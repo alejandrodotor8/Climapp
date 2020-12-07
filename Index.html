@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Climapp</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="div__main">
+			<nav class="nav__title">Climapp</nav>
+			<div id="city_weather_answer" class="div-city-temperature"></div>
+		</div>
+		<main id="main" class="main">
+			<figure>
+				<img src="./img/Logo.svg" alt="Este es el logo de la WEB" />
+			</figure>
+			<div class="div-span__title"><span>Climapp</span></div>
+			<div class="div-span__info">
+				<span>Agrega la ciudad para obtener su clima</span>
+			</div>
+			<form id="form" class="main__form" action="">
+				<input
+					id="input_ciudad"
+					class="form__input"
+					list="ciudad"
+					placeholder="Escribe tu ciudad"
+					onfocus="this.value=''"
+				/>
+				<datalist id="ciudad">
+					<option value="Bogotá"></option>
+					<option value="Medellin"></option>
+					<option value="Cartagena"></option>
+					<option value="Ciudad de Mexico"></option>
+					<option value="Santiago de Chile"></option>
+					<option value="Buenos Aires"> </option>
+					<option value="Lima"></option>
+					<option value="Quito"></option>
+					<option value="Caracas"></option>
+					<option value="Las Vegas"></option>
+				</datalist>
+				<button class="form_button__get" type="submit">
+					Obtener clima
+				</button>
+			</form>
+		</main>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
